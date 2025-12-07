@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentalKu - Sewa Mobil Terpercaya & Terjangkau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="Logo.jpg" alt="Logo" class="logo-icon">
+                <span>RentalKu</span>
+            </div>
+            <nav>
+                <a href="#beranda">Beranda</a>
+                <a href="#mobil">Mobil</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#testimoni">Testimoni</a>
+                <a href="#kontak">Kontak</a>
+                <button class="btn-primary" onclick="openBookingModal()">Sewa Sekarang</button>
+                <button id="theme-toggle" class="theme-toggle-btn">🌙</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+        <div class="hero-text">
+            <h1>Sewa <span class="highlight">Mobil</span><br>Terpercaya &<br>Terjangkau</h1>
+            <p>Dapatkan mobil berkualitas dengan harga terbaik untuk perjalanan Anda. Proses mudah, cepat, dan terpercaya.</p>
+            
+            <div class="hero-buttons">
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20mobil" class="btn-primary">Mulai Sewa Mobil →</a>
+                <a href="#mobil" class="btn-secondary">Lihat Katalog</a>
+            </div>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number blue">500+</div>
+                    <div class="stat-label">Mobil Tersedia</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number purple">1000+</div>
+                    <div class="stat-label">Pelanggan Puas</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number green">24/7</div>
+                    <div class="stat-label">Layanan</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <h3>Pilih Mobil Favorit Anda</h3>
+            <div class="car-showcase">
+                <img src="Gambar.jpg" alt="Mobil" class="car-card">
+            </div>
+            <div class="booking-info">
+                <h4>Booking Instan</h4>
+                <p>Pesan mobil hanya dalam 5 menit</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section class="cars-section" id="mobil">
+        <div class="section-title">
+            <h2>Pilihan Mobil <span class="highlight">Terbaik</span></h2>
+            <p>Berbagai jenis mobil berkualitas siap menemani perjalanan Anda</p>
+        </div>
+
+        <div class="cars-grid">
+            <div class="car-item">
+                <div class="car-image">
+                    <img src="Avanza.jpeg" alt="Toyota Avanza">
+                </div>
+                <div class="car-name">Toyota Avanza</div>
+                <div class="car-price">Rp 300.000<span style="font-size: 16px; color: #666;">/hari</span></div>
+                <div class="car-specs">
+                    <div class="spec-item">👥 7 Penumpang</div>
+                    <div class="spec-item">⚙️ Manual</div>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20Toyota%20Avanza" class="btn-rent">Sewa Sekarang</a>
+            </div>
+
+            <div class="car-item">
+                <div class="car-image">
+                    <img src="Brio.jpeg" alt="Honda Brio">
+                </div>
+                <div class="car-name">Honda Brio</div>
+                <div class="car-price">Rp 250.000<span style="font-size: 16px; color: #666;">/hari</span></div>
+                <div class="car-specs">
+                    <div class="spec-item">👥 5 Penumpang</div>
+                    <div class="spec-item">⚙️ Automatic</div>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20Honda%20Brio" class="btn-rent">Sewa Sekarang</a>
+            </div>
+
+            <div class="car-item">
+                <div class="car-image">
+                    <img src="Xpander.jpeg" alt="Mitsubishi Xpander">
+                </div>
+                <div class="car-name">Mitsubishi Xpander</div>
+                <div class="car-price">Rp 400.000<span style="font-size: 16px; color: #666;">/hari</span></div>
+                <div class="car-specs">
+                    <div class="spec-item">👥 7 Penumpang</div>
+                    <div class="spec-item">⚙️ Manual</div>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20Mitsubishi%20Xpander" class="btn-rent">Sewa Sekarang</a>
+            </div>
+
+            <div class="car-item">
+                <div class="car-image">
+                    <img src="Fortuner.jpeg" alt="Toyota Fortuner">
+                </div>
+                <div class="car-name">Toyota Fortuner</div>
+                <div class="car-price">Rp 800.000<span style="font-size: 16px; color: #666;">/hari</span></div>
+                <div class="car-specs">
+                    <div class="spec-item">👥 7 Penumpang</div>
+                    <div class="spec-item">⛽ Diesel</div>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20Toyota%20Fortuner" class="btn-rent">Sewa Sekarang</a>
+            </div>
+
+            <div class="car-item">
+                <div class="car-image">
+                    <img src="Hrv.jpeg" alt="Honda HR-V">
+                </div>
+                <div class="car-name">Honda HR-V</div>
+                <div class="car-price">Rp 600.000<span style="font-size: 16px; color: #666;">/hari</span></div>
+                <div class="car-specs">
+                    <div class="spec-item">👥 5 Penumpang</div>
+                    <div class="spec-item">⚙️ Automatic</div>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20Honda%20HR-V" class="btn-rent">Sewa Sekarang</a>
+            </div>
+
+            <div class="car-item">
+                <div class="car-image">
+                    <img src="Innova.jpeg" alt="Toyota Innova">
+                </div>
+                <div class="car-name">Toyota Innova</div>
+                <div class="car-price">Rp 500.000<span style="font-size: 16px; color: #666;">/hari</span></div>
+                <div class="car-specs">
+                    <div class="spec-item">👥 7 Penumpang</div>
+                    <div class="spec-item">⛽ Diesel</div>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20sewa%20Toyota%20Innova" class="btn-rent">Sewa Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="layanan">
+        <div class="section-title">
+            <h2>Mengapa Pilih <span class="highlight">RentalKu?</span></h2>
+            <p>Apa kata mereka yang sudah mencoba layanan kami</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🕐</div>
+                <div class="feature-title">24/7 Service</div>
+                <div class="feature-desc">Layanan pelanggan siap membantu Anda kapan saja</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <div class="feature-title">Asuransi Lengkap</div>
+                <div class="feature-desc">Perlindungan menyeluruh untuk keamanan perjalanan</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <div class="feature-title">Booking Mudah</div>
+                <div class="feature-desc">Reservasi online yang cepat dan praktis</div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⭐</div>
+                <div class="feature-title">Kualitas Terjamin</div>
+                <div class="feature-desc">Mobil terawat dan selalu dalam kondisi prima</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimoni">
+        <div class="section-title">
+            <h2>Kata <span class="highlight">Pelanggan</span></h2>
+            <p>Apa kata mereka yang sudah mencoba layanan kami</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="testimonial-text">"Sangat memuaskan, mobil terawat. Recommended!"</div>
+                <div class="testimonial-author">- Dedi</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="testimonial-text">"Proses sewa mudah dan cepat. Harga terjangkau dengan kualitas terbaik."</div>
+                <div class="testimonial-author">- Sari Dewi</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="testimonial-text">"Sudah beberapa kali sewa disini, selalu puas dengan pelayanannya."</div>
+                <div class="testimonial-author">- Ahmad Rahman</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="testimonial-text">"Armada terawat dan mobil sangat bagus. Puas!"</div>
+                <div class="testimonial-author">- Dewi Lestari</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="kontak">
+        <div class="contact-card">
+            <div class="section-title">
+                <h2>Kantor Pusat</h2>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-text">
+                        <div class="contact-label">Alamat</div>
+                        <div class="contact-value">Cipondoh, Kota Tangerang No. 99</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-text">
+                        <div class="contact-label">Telepon</div>
+                        <div class="contact-value">+62 878-8453-3747</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📁</div>
+                    <div class="contact-text">
+                        <div class="contact-label">Email</div>
+                        <div class="contact-value">info@rentalku.com</div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🕐</div>
+                    <div class="contact-text">
+                        <div class="contact-label">Jam Operasional</div>
+                        <div class="contact-value">Buka Setiap Hari: 08.00 - 21.00 WIB</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>Hubungi Kami</h2>
+            <p>Siap membantu perjalanan Anda</p>
+            <a href="https://wa.me/6287884533747?text=Halo,Saya ingin menyewa. apakah unutk kendaraannya siap?" class="btn-primary" style="margin-top: 20px;">Hubungi Sekarang</a>
+        </div>
+    </footer>
+
+    <script>
+        function openBookingModal() {
+            alert("Fitur booking segera hadir!");
+        }
+
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', currentTheme);
+        themeToggle.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>
